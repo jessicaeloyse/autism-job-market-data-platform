@@ -1,7 +1,7 @@
 import os
 import json
-from platform.schemas.create_schemas import create_schemas
-
+from schemas.create_schemas import create_schemas
+from spark_session import get_spark
 
 def load_config():
     env_path = os.getenv("SCHEMA_CONFIG_PATH")
@@ -10,7 +10,7 @@ def load_config():
         return env_path
 
     try:
-        with open("configs/local_config.json", "r") as f:
+        with open("../configs/local_configs.json", "r") as f:
             config = json.load(f)
             return config["schema_config_path"]
     except Exception:
@@ -32,4 +32,4 @@ def run_setup(spark):
 
 
 if __name__ == "__main__":
-    run_setup(spark)
+    run_setup(spark=get_spark())
