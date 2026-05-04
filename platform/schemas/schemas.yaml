@@ -1,0 +1,20 @@
+schemas:
+  - name: bronze
+    comment: >
+      Raw ingestion layer storing unprocessed data from external sources such as job postings APIs and external datasets.
+      Data is preserved in its original format to ensure traceability and reprocessing.
+
+  - name: silver
+    comment: >
+      Curated layer containing cleaned and standardized datasets derived from raw sources such as job postings and socioeconomic data.
+      Ensures data quality and consistency for downstream processing.
+
+  - name: gold
+    comment: >
+      Business-level layer with analytical datasets focused on autism inclusion in the job market.
+      Designed for insights on workforce participation, hiring trends, and regional analysis.
+
+  - name: metadata
+    comment: >
+      Operational layer storing pipeline metadata, including ingestion logs, processing status, and incremental tracking information.
+      Supports monitoring and pipeline reliability.
