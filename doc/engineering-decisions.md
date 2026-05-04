@@ -75,3 +75,18 @@ Allows seamless execution across environments. Environment variables support pro
 
 **Trade-offs**
 Adds complexity to configuration management and requires proper handling to avoid inconsistencies.
+
+
+## Execution Environment Strategy
+
+**Context**  
+Need to support execution across different environments (Databricks notebooks and local scripts).
+
+**Decision**  
+Implement a reusable Spark session helper that retrieves an existing session when available or creates a new one otherwise.
+
+**Reasoning**  
+Ensures compatibility across environments while keeping execution logic simple and reusable.
+
+**Trade-offs**  
+Abstracts Spark session creation, which may hide environment-specific behavior if not well understood.
