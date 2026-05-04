@@ -10,7 +10,7 @@ def load_config():
         return env_path
 
     try:
-        with open("../configs/local_configs.json", "r") as f:
+        with open("../configs/local_config.json", "r") as f:
             config = json.load(f)
             return config["schema_config_path"]
     except Exception:
