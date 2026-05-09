@@ -41,7 +41,7 @@ This structure enables clear data lineage, scalability, and efficient data consu
 
 ├── docs/
 │   └── engineering-decisions.md
-├── platform/
+├── app/
 │   ├── schemas/
 │   │   ├── schemas.yaml
 │   │   └── create_schemas.py
