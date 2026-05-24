@@ -37,6 +37,8 @@ This structure enables clear data lineage, scalability, and efficient data consu
 
 ## Project Structure
 
+<!-- PROJECT_STRUCTURE_START -->
+
 ```id="kcc9g6"
 
 ├── agents/
@@ -52,6 +54,7 @@ This structure enables clear data lineage, scalability, and efficient data consu
 ├── docs/
 │   └── engineering-decisions.md
 ```
+<!-- PROJECT_STRUCTURE_END -->
 
 ---
 
