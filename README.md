@@ -39,8 +39,8 @@ This structure enables clear data lineage, scalability, and efficient data consu
 
 ```id="kcc9g6"
 
-├── docs/
-│   └── engineering-decisions.md
+├── agents/
+│   └── spark_review_agent/
 ├── app/
 │   ├── schemas/
 │   │   ├── schemas.yaml
@@ -49,6 +49,8 @@ This structure enables clear data lineage, scalability, and efficient data consu
 │   └── spark_session.py
 ├── configs/
 │   └── local_config.json  (not versioned)
+├── docs/
+│   └── engineering-decisions.md
 ```
 
 ---
