@@ -76,6 +76,7 @@ Allows seamless execution across environments. Environment variables support pro
 **Trade-offs**
 Adds complexity to configuration management and requires proper handling to avoid inconsistencies.
 
+---
 
 ## Execution Environment Strategy
 
@@ -90,3 +91,23 @@ Ensures compatibility across environments while keeping execution logic simple a
 
 **Trade-offs**  
 Abstracts Spark session creation, which may hide environment-specific behavior if not well understood.
+
+---
+
+## Documentation Synchronization Strategy
+
+**Context**  
+Need to keep the README project structure aligned with the actual repository structure over time.
+
+**Decision**  
+Implement an automated README synchronization agent that generates the repository tree dynamically and updates the documentation during merges to the main branch.
+
+**Reasoning**  
+Ensures that repository documentation remains accurate without requiring manual updates. The solution improves developer experience and demonstrates repository self-maintenance practices commonly used in modern platform engineering.
+
+**Trade-offs**  
+Adds coupling between repository structure and CI/CD workflows, requiring automation reliability to avoid outdated documentation.
+
+---
+
+
