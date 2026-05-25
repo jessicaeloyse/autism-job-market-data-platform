@@ -79,8 +79,6 @@ autism-job-market-data-platform
 │       └── update-readme.yml
 ├── agents
 │   ├── readme_structure_agent
-│   │   ├── __pycache__
-│   │   │   └── tree_generator.cpython-311.pyc
 │   │   ├── constants.py
 │   │   ├── readme_updater.py
 │   │   └── tree_generator.py
