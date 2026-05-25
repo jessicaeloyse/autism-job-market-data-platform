@@ -1,3 +1,6 @@
 # Local config file
 
 configs/local_config.json
+
+#python
+__pycache__/
