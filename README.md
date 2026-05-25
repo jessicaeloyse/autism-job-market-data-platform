@@ -41,8 +41,13 @@ This structure enables clear data lineage, scalability, and efficient data consu
 
 ```text
 autism-job-market-data-platform
+├── .github
+│   └── workflows
+│       └── update-readme.yml
 ├── agents
 │   ├── readme_structure_agent
+│   │   ├── __pycache__
+│   │   │   └── tree_generator.cpython-311.pyc
 │   │   ├── constants.py
 │   │   ├── readme_updater.py
 │   │   └── tree_generator.py
@@ -67,6 +72,8 @@ autism-job-market-data-platform
 │   └── local_configs.json
 ├── docs
 │   └── engineering-decisions.md
+├── notebooks
+│   └── notebook_test.ipynb
 ├── .gitignore
 ├── LICENSE
 └── README.md
