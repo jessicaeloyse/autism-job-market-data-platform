@@ -37,21 +37,42 @@ This structure enables clear data lineage, scalability, and efficient data consu
 
 ## Project Structure
 
-```id="kcc9g6"
+<!-- PROJECT_STRUCTURE_START -->
 
-├── agents/
-│   └── spark_review_agent/
-├── app/
-│   ├── schemas/
-│   │   ├── schemas.yaml
-│   │   └── create_schemas.py
-│   ├── setup.py
-│   └── spark_session.py
-├── configs/
-│   └── local_config.json  (not versioned)
-├── docs/
+```text
+autism-job-market-data-platform
+├── agents
+│   ├── readme_structure_agent
+│   │   ├── constants.py
+│   │   ├── readme_updater.py
+│   │   └── tree_generator.py
+│   └── spark_review_agent
+│       ├── sample_code
+│       │   └── bad_spark_code.py
+│       ├── reviewer.py
+│       └── rules.py
+├── app
+│   ├── common
+│   │   ├── context.py
+│   │   └── spark_session.py
+│   ├── ingestion
+│   │   └── __init__.py
+│   ├── schemas
+│   │   ├── __init__.py
+│   │   ├── create_schemas.py
+│   │   └── schemas.yaml
+│   ├── __init__.py
+│   └── setup.py
+├── configs
+│   └── local_configs.json
+├── docs
 │   └── engineering-decisions.md
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
+
+<!-- PROJECT_STRUCTURE_END -->
 
 ---
 
