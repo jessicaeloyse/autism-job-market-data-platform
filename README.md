@@ -2,7 +2,9 @@
 
 ## Overview
 
-This project aims to build a data platform to analyze autism inclusion in the job market, focusing on data integration, transformation, and analytics.
+This project aims to build a modern data platform to analyze autism inclusion in the job market, focusing on scalable data engineering practices, data integration, transformation, and analytics.
+
+The platform also explores engineering automation concepts through lightweight repository agents and CI/CD-driven workflows.
 
 ---
 
@@ -12,6 +14,7 @@ This project aims to build a data platform to analyze autism inclusion in the jo
 * Build scalable data pipelines using PySpark
 * Apply medallion architecture (Bronze, Silver, Gold)
 * Ensure data quality, consistency, and traceability
+* Explore platform engineering and repository automation practices
 
 ---
 
@@ -23,8 +26,6 @@ The platform follows a **medallion architecture**, organizing data into three la
 * **Silver** → Cleaned and standardized datasets
 * **Gold** → Aggregated, analytics-ready data
 
-This structure enables clear data lineage, scalability, and efficient data consumption.
-
 ---
 
 ## Tech Stack
@@ -32,6 +33,34 @@ This structure enables clear data lineage, scalability, and efficient data consu
 * **PySpark**
 * **Delta Lake**
 * **Databricks**
+* **Python**
+* **GitHub Actions**
+* **YAML**
+
+---
+
+## Engineering Practices
+
+* Medallion architecture
+* Config-driven infrastructure
+* Repository automation
+* CI/CD-based documentation synchronization
+* Static analysis for Spark workloads
+* Modular project structure
+
+---
+
+## Automation Agents
+
+The project includes lightweight engineering automation agents designed to improve maintainability and developer experience.
+
+### README Structure Agent
+
+Automatically synchronizes the repository structure section in the README with the actual filesystem structure during merges to the main branch.
+
+### Spark Review Agent
+
+Performs static analysis on PySpark scripts, identifying potential anti-patterns and distributed processing issues such as unsafe `collect()` usage.
 
 ---
 
@@ -90,7 +119,7 @@ export SCHEMA_CONFIG_PATH=/path/to/schemas.yaml
 
 **Option B — Local config file:**
 
-Create `configs/local_config.json`:
+Create `configs/local_configs.json`:
 
 ```json
 {
@@ -121,16 +150,29 @@ The following schemas will be created:
 
 ---
 
-## Design Decisions
+## Documentation
 
-Architectural decisions and trade-offs are documented in:
+Architectural decisions and engineering trade-offs are documented in:
 
-```
+```text
 docs/engineering-decisions.md
 ```
 
 ---
 
-## Status
+## Current Progress
 
-🚧 In progress — currently implementing data ingestion (Bronze layer)
+### Completed
+
+* Repository structure automation agent
+* Schema creation automation
+* Medallion architecture definition
+* Environment configuration strategy
+* CI/CD workflow for documentation synchronization
+
+### In Progress
+
+* Spark static review agent
+* Bronze layer ingestion pipeline
+
+---
