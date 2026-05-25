@@ -3,7 +3,7 @@ name: Update README Structure
 on:
   pull_request:
     branches:
-      - main
+      - master
     types:
       - closed
 
