@@ -72,8 +72,6 @@ autism-job-market-data-platform
 │   └── local_configs.json
 ├── docs
 │   └── engineering-decisions.md
-├── notebooks
-│   └── notebook_test.ipynb
 ├── .gitignore
 ├── LICENSE
 └── README.md
