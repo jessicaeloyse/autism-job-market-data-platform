@@ -1,5 +1,13 @@
 # Autism Job Market Data Platform
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
+![Delta Lake](https://img.shields.io/badge/Delta_Lake-003366?style=for-the-badge)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+
+---
+
 ## Overview
 
 This project aims to build a modern data platform to analyze autism inclusion in the job market, focusing on scalable data engineering practices, data integration, transformation, and analytics.
@@ -57,10 +65,6 @@ The project includes lightweight engineering automation agents designed to impro
 ### README Structure Agent
 
 Automatically synchronizes the repository structure section in the README with the actual filesystem structure during merges to the main branch.
-
-### Spark Review Agent
-
-Performs static analysis on PySpark scripts, identifying potential anti-patterns and distributed processing issues such as unsafe `collect()` usage.
 
 ---
 
